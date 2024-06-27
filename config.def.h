@@ -126,7 +126,7 @@ static Sp scratchpads[] = {
  */
 static char *tagicons[][NUMTAGS] =
 {
-	[DEFAULT_TAGS]        = { "󰣇", "", "󰈹", "󰨞", "", "󰕼", "", "󰻞", "󰊴" },
+	[DEFAULT_TAGS]        = { "󰣇", "", "󰈹", "󰨞", "󰚌", "󰕼", "󰲓", "󰙯", "󰊖" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F", "G", "H", "I" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>", "<7>", "<8>", "<9>" },
 };
@@ -169,6 +169,9 @@ static const Rule rules[] = {
 	RULE(.class = "St", .isterminal = 1)
 	RULE(.class = "vesktop", .tags = 1 << 7)
 	RULE(.instance = "spterm", .tags = SPTAG(0), .isfloating = 1)
+  RULE(.class = "Virt-manager", .tags = 1 << 4, .isfloating = 1)
+  RULE(.class = "vlc", .tags = 1 << 5)
+  RULE(.title = "AudioRelay", .tags = 1 << 4)
 };
 
 /* Bar rules allow you to configure what is shown where on the bar, as well as
@@ -253,6 +256,11 @@ static const char *powermenu[] = { "/home/vaproh/.local/bin/scripts/wm_power_men
 static const char *lf[] = { "setsid", "-f", "st", "-e", "lfrun", NULL };
 static const char *new_look[] = { "/home/vaproh/.local/bin/scripts/new_look", NULL };
 
+/* fn keys */
+static const char *up_vol[]   = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+10%",   NULL };
+static const char *down_vol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-10%",   NULL };
+static const char *mute_vol[] = { "pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle", NULL };
+
 /* This defines the name of the executable that handles the bar (used for signalling purposes) */
 #define STATUSBAR "dwmblocks"
 
@@ -321,6 +329,9 @@ static const Key keys[] = {
 	{ MODKEY,			XK_d,	       spawn,		       {.v = lf } },      
 	{ MODKEY,                       XK_n,	       spawn,                  {.v = new_look } },
 	{ MODKEY,			XK_x,	       togglescratch,	       {.ui = 0 } },
+  { 0, XF86XK_AudioMute,        spawn, {.v = mute_vol } },
+  { 0, XF86XK_AudioLowerVolume, spawn, {.v = down_vol } },
+  { 0, XF86XK_AudioRaiseVolume, spawn, {.v = up_vol } },
 	TAGKEYS(                        XK_1,                                  0)
 	TAGKEYS(                        XK_2,                                  1)
 	TAGKEYS(                        XK_3,                                  2)
