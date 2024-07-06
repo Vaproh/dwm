@@ -61,8 +61,8 @@ loadxrdb()
 				XRDB_LOAD_COLOR("dwm.color0", titlenormbgcolor);
 				XRDB_LOAD_COLOR("dwm.color0", titlenormbordercolor);
 				XRDB_LOAD_COLOR("dwm.color0", titlenormfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color0", titleselfgcolor);
-				XRDB_LOAD_COLOR("dwm.color14", titleselbgcolor);
+				XRDB_LOAD_COLOR("dwm.color14", titleselfgcolor);
+				XRDB_LOAD_COLOR("dwm.color0", titleselbgcolor);
 				XRDB_LOAD_COLOR("dwm.color0", titleselbordercolor);
 				XRDB_LOAD_COLOR("dwm.color0", titleselfloatcolor);
 				XRDB_LOAD_COLOR("dwm.color6", tagsnormfgcolor);
