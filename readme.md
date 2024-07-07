@@ -19,4 +19,5 @@
 1. Clone this repo
 2. Compile it using this command (sudo make clean install)
 3. Logout and login back
+4. Enjoy!
 
