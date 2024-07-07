@@ -6,5 +6,5 @@
 ![screenshot3](showcase/screenshot-3.png)
 # Video overview
 
-showcase/vid-1.mp4
+[<img src="https://img.youtube.com/vi/BDOf0-YtSlc/hqdefault.jpg" width="600" height="300"/>](https://www.youtube.com/embed/BDOf0-YtSlc)
 
