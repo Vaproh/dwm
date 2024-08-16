@@ -126,7 +126,7 @@ static Sp scratchpads[] = {
  */
 static char *tagicons[][NUMTAGS] =
 {
-	[DEFAULT_TAGS]        = { "", "", "󰈹", "󰨞", "󰚌", "󰕼", "", "󰙯", "󰊖" },
+	[DEFAULT_TAGS]        = { "󰣇", "", "󰈹", "", "󰚌", "", "󰕧", "󰻞", "󰺷" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F", "G", "H", "I" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>", "<7>", "<8>", "<9>" },
 };
@@ -164,16 +164,20 @@ static const Rule rules[] = {
 	RULE(.class = "firefox", .tags = 1 << 2)
 	RULE(.class = "pavucontrol", .isfloating = 1)
 	RULE(.instance = "spterm", .tags = SPTAG(0), .isfloating = 1)
-	RULE(.class = "obs", .tags = 1 << 6)
+	RULE(.class = "obs", .tags = 1 << 5)
 	RULE(.class = "code-oss", .tags = 1 << 3)
 	RULE(.class = "St", .isterminal = 1)
-	RULE(.class = "vesktop", .tags = 1 << 7)
+	RULE(.class = "vesktop", .tags = 1 << 7, .isfloating = 1)
 	RULE(.instance = "spterm", .tags = SPTAG(0), .isfloating = 1)
-  RULE(.class = "Virt-manager", .tags = 1 << 4, .isfloating = 1)
-  RULE(.class = "vlc", .tags = 1 << 5)
+  RULE(.class = "Virt-manager", .tags = 1 << 5, .isfloating = 1)
+  RULE(.class = "vlc", .tags = 1 << 6)
   RULE(.title = "AudioRelay", .tags = 1 << 4)
-  RULE(.class = "TelegramDesktop", .tags = 1 << 6)
+  RULE(.class = "TelegramDesktop", .tags = 1 << 7, .isfloating = 1)
   RULE(.class = "steam", .tags = 1 << 8)
+  RULE(.class = "Spotify", .tags = 1 << 6)
+  RULE(.class = "Godot", .tags = 1 << 4)
+  RULE(.class = "Jellyfin Media Player", .tags = 1 << 6)
+  RULE(.class = "qBittorrent", .tags = 1 << 4)
 };
 
 /* Bar rules allow you to configure what is shown where on the bar, as well as
