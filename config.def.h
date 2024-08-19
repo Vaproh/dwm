@@ -178,6 +178,7 @@ static const Rule rules[] = {
   RULE(.class = "Godot", .tags = 1 << 4)
   RULE(.class = "Jellyfin Media Player", .tags = 1 << 6)
   RULE(.class = "qBittorrent", .tags = 1 << 4)
+  RULE(.class = "Thorium-browser", .tags = 1 << 2)
 };
 
 /* Bar rules allow you to configure what is shown where on the bar, as well as
