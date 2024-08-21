@@ -17,7 +17,7 @@ static const int showbar                 = 1;   /* 0 means no bar */
 static const int topbar                  = 1;   /* 0 means bottom bar */
 static const int bar_height              = 25;   /* 0 means derive from font, >= 1 explicit height */
 static const int vertpad                 = 5;  /* vertical padding of bar */
-static const int sidepad                 = 18;  /* horizontal padding of bar */
+static const int sidepad                 = 15;  /* horizontal padding of bar */
 #define ICONSIZE 15    /* icon size */
 #define ICONSPACING 10  /* space between icon and title */
 /* Status is to be shown on: -1 (all monitors), 0 (a specific monitor by index), 'A' (active monitor) */
@@ -126,7 +126,7 @@ static Sp scratchpads[] = {
  */
 static char *tagicons[][NUMTAGS] =
 {
-	[DEFAULT_TAGS]        = { "󰣇", "", "󰈹", "", "󰚌", "", "󰕧", "󰻞", "󰺷" },
+	[DEFAULT_TAGS]        = { "󰣇", "", "", "", "󰚌", "", "󰕧", "󰻞", "󰺷" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F", "G", "H", "I" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>", "<7>", "<8>", "<9>" },
 };
