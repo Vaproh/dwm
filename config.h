@@ -179,6 +179,7 @@ static const Rule rules[] = {
   RULE(.class = "Jellyfin Media Player", .tags = 1 << 6)
   RULE(.class = "qBittorrent", .tags = 1 << 4)
   RULE(.class = "Thorium-browser", .tags = 1 << 2)
+  RULE(.class = "Exodus", .tags = 1 << 4)
 };
 
 /* Bar rules allow you to configure what is shown where on the bar, as well as
@@ -246,21 +247,21 @@ static const char *dmenucmd[] = {
 };
 
 /* Rofi */
-static char *roficmd[] = { "rofi", "-show", "drun", NULL }; /* normal */
-static char *roficalc[] = { "rofi", "-show", "calc", NULL }; /* for emoji */
-static char *rofiemoji[] = { "rofi", "-show", "emoji", NULL }; /* for caclulator */
+/*static char *roficmd[] = { "rofi", "-show", "drun", NULL };  normal */
+/*static char *roficalc[] = { "rofi", "-show", "calc", NULL };  for emoji */
+/*static char *rofiemoji[] = { "rofi", "-show", "emoji", NULL };  for caclulator */
 
 /* Terminals */
 static const char *stcmd[]  = { "st", NULL }; /* st terminal */
 
 /* screenshots */
-static const char *screenshot[] = { "/home/vaproh/.local/bin/scripts/vap-ss", NULL }; // for static screenshots
-static const char *capturess[] = { "/home/vaproh/.local/bin/scripts/vap-cap-reg", NULL }; // for region capture ss
-static const char *capwin[] = { "/home/vaproh/.local/bin/scripts/vap-act-ss", NULL }; // for capturing focussed windows
+/*static const char *screenshot[] = { "/home/vaproh/.local/bin/scripts/vap-ss", NULL };  for static screenshots*/
+/*static const char *capturess[] = { "/home/vaproh/.local/bin/scripts/vap-cap-reg", NULL };  for region capture ss*/
+/*static const char *capwin[] = { "/home/vaproh/.local/bin/scripts/vap-act-ss", NULL };  for capturing focussed windows*/
 
 /* commands */
-static const char *powermenu[] = { "/home/vaproh/.local/bin/scripts/wm_power_menu", NULL };
-static const char *lf[] = { "setsid", "-f", "st", "-e", "lfrun", NULL };
+/*static const char *powermenu[] = { "/home/vaproh/.local/bin/scripts/wm_power_menu", NULL };*/
+/*static const char *lf[] = { "setsid", "-f", "st", "-e", "lfrun", NULL };*/
 static const char *new_look[] = { "/home/vaproh/.local/bin/scripts/new_look", NULL };
 
 /* This defines the name of the executable that handles the bar (used for signalling purposes) */
@@ -268,11 +269,11 @@ static const char *new_look[] = { "/home/vaproh/.local/bin/scripts/new_look", NU
 
 static const Key keys[] = {
 	/* modifier                     key            function                argument */
-	{ MODKEY,                       XK_space,      spawn,                  {.v = roficmd } },
-	{ MODKEY,						XK_c,	       spawn,		           {.v = roficalc } },
-	{ MODKEY,						XK_e,	       spawn,		           {.v = rofiemoji } },
+	/*{ MODKEY,                       XK_space,      spawn,                  {.v = roficmd } },*/
+	/*{ MODKEY,						XK_c,	       spawn,		           {.v = roficalc } },*/
+	/*{ MODKEY,						XK_e,	       spawn,		           {.v = rofiemoji } },*/
 	{ MODKEY,	                	XK_Return,     spawn,                  {.v = stcmd } },
-	{ MODKEY,	                	XK_p,	       spawn,                  {.v = powermenu } },
+	/*{ MODKEY,	                	XK_p,	       spawn,                  {.v = powermenu } },*/
 	{ MODKEY,                       XK_b,          togglebar,              {0} },
 	{ MODKEY,                       XK_j,          focusstack,             {.i = +1 } },
 	{ MODKEY,                       XK_k,          focusstack,             {.i = -1 } },
@@ -325,10 +326,10 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period,     focusmon,               {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,      tagmon,                 {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period,     tagmon,                 {.i = +1 } },
-	{ MODKEY,			XK_Print,      spawn,		       {.v = screenshot } },
-	{ ControlMask,			XK_Print,      spawn,		       {.v = capturess } },
-	{ ShiftMask,			XK_Print,      spawn,		       {.v = capwin } },      
-	{ MODKEY,			XK_d,	       spawn,		       {.v = lf } },      
+	/*{ MODKEY,			XK_Print,      spawn,		       {.v = screenshot } },*/
+	/*{ ControlMask,			XK_Print,      spawn,		       {.v = capturess } },*/
+	/*{ ShiftMask,			XK_Print,      spawn,		       {.v = capwin } },      */
+	/*{ MODKEY,			XK_d,	       spawn,		       {.v = lf } },      */
 	{ MODKEY,                       XK_n,	       spawn,                  {.v = new_look } },
 	{ MODKEY,			XK_x,	       togglescratch,	       {.ui = 0 } },
 	TAGKEYS(                        XK_1,                                  0)
