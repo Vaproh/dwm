@@ -126,7 +126,7 @@ static Sp scratchpads[] = {
  */
 static char *tagicons[][NUMTAGS] =
 {
-	[DEFAULT_TAGS]        = { "󰣇", "", "󰈹", "", "󰚌", "", "󰕧", "󰻞", "󰺷" },
+	[DEFAULT_TAGS]        = { "󰣇", "", "", "", "󰚌", "", "󰕧", "󰻞", "󰺷" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F", "G", "H", "I" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>", "<7>", "<8>", "<9>" },
 };
@@ -180,6 +180,7 @@ static const Rule rules[] = {
   RULE(.class = "qBittorrent", .tags = 1 << 4)
   RULE(.class = "Thorium-browser", .tags = 1 << 2)
   RULE(.class = "Exodus", .tags = 1 << 4)
+  RULE(.class = "Nitrogen", .isfloating = 1)
 };
 
 /* Bar rules allow you to configure what is shown where on the bar, as well as
@@ -262,7 +263,7 @@ static const char *stcmd[]  = { "st", NULL }; /* st terminal */
 /* commands */
 /*static const char *powermenu[] = { "/home/vaproh/.local/bin/scripts/wm_power_menu", NULL };*/
 /*static const char *lf[] = { "setsid", "-f", "st", "-e", "lfrun", NULL };*/
-static const char *new_look[] = { "/home/vaproh/.local/bin/scripts/new_look", NULL };
+/*static const char *new_look[] = { "/home/vaproh/.local/bin/scripts/new_look", NULL };*/
 
 /* This defines the name of the executable that handles the bar (used for signalling purposes) */
 #define STATUSBAR "dwmblocks"
@@ -330,7 +331,7 @@ static const Key keys[] = {
 	/*{ ControlMask,			XK_Print,      spawn,		       {.v = capturess } },*/
 	/*{ ShiftMask,			XK_Print,      spawn,		       {.v = capwin } },      */
 	/*{ MODKEY,			XK_d,	       spawn,		       {.v = lf } },      */
-	{ MODKEY,                       XK_n,	       spawn,                  {.v = new_look } },
+	/*{ MODKEY,                       XK_n,	       spawn,                  {.v = new_look } },*/
 	{ MODKEY,			XK_x,	       togglescratch,	       {.ui = 0 } },
 	TAGKEYS(                        XK_1,                                  0)
 	TAGKEYS(                        XK_2,                                  1)
