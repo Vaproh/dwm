@@ -4,10 +4,10 @@
 static const unsigned int borderpx       = 2;   /* border pixel of windows */
 static const unsigned int snap           = 32;  /* snap pixel */
 static const int swallowfloating         = 1;   /* 1 means swallow floating windows by default */
-static const unsigned int gappih         = 10;  /* horiz inner gap between windows */
-static const unsigned int gappiv         = 10;  /* vert inner gap between windows */
-static const unsigned int gappoh         = 10;  /* horiz outer gap between windows and screen edge */
-static const unsigned int gappov         = 15;  /* vert outer gap between windows and screen edge */
+static const unsigned int gappih         = 5;  /* horiz inner gap between windows */
+static const unsigned int gappiv         = 5;  /* vert inner gap between windows */
+static const unsigned int gappoh         = 5;  /* horiz outer gap between windows and screen edge */
+static const unsigned int gappov         = 5;  /* vert outer gap between windows and screen edge */
 static const int smartgaps_fact          = 1;   /* gap factor when there is only one client; 0 = no gaps, 3 = 3x outer gaps */
 static const char autostartblocksh[]     = "autostart_blocking.sh";
 static const char autostartsh[]          = "autostart.sh";
@@ -15,16 +15,16 @@ static const char dwmdir[]               = "dwm";
 static const char localshare[]           = ".local/share";
 static const int showbar                 = 1;   /* 0 means no bar */
 static const int topbar                  = 1;   /* 0 means bottom bar */
-static const int bar_height              = 25;   /* 0 means derive from font, >= 1 explicit height */
-static const int vertpad                 = 5;  /* vertical padding of bar */
-static const int sidepad                 = 15;  /* horizontal padding of bar */
+static const int bar_height              = 0;   /* 0 means derive from font, >= 1 explicit height */
+static const int vertpad                 = 0;  /* vertical padding of bar */
+static const int sidepad                 = 0;  /* horizontal padding of bar */
 #define ICONSIZE 15    /* icon size */
 #define ICONSPACING 10  /* space between icon and title */
 /* Status is to be shown on: -1 (all monitors), 0 (a specific monitor by index), 'A' (active monitor) */
 static const int statusmon               = 'A';
 static const unsigned int systrayspacing = 1;   /* systray spacing */
 static const int showsystray             = 1;   /* 0 means no systray */
-static const unsigned int ulinepad = 5;         /* horizontal padding between the underline and tag */
+static const unsigned int ulinepad       = 5;         /* horizontal padding between the underline and tag */
 static const unsigned int ulinestroke  = 2;     /* thickness / height of the underline */
 static const unsigned int ulinevoffset = 0;     /* how far above the bottom of the bar the line should appear */
 static const int ulineall = 0;                  /* 1 to show underline on all tags, 0 for just the active ones */
@@ -169,18 +169,18 @@ static const Rule rules[] = {
 	RULE(.class = "St", .isterminal = 1)
 	RULE(.class = "vesktop", .tags = 1 << 7, .isfloating = 1)
 	RULE(.instance = "spterm", .tags = SPTAG(0), .isfloating = 1)
-  RULE(.class = "Virt-manager", .tags = 1 << 5, .isfloating = 1)
-  RULE(.class = "vlc", .tags = 1 << 6)
-  RULE(.title = "AudioRelay", .tags = 1 << 4)
-  RULE(.class = "TelegramDesktop", .tags = 1 << 7, .isfloating = 1)
-  RULE(.class = "steam", .tags = 1 << 8)
-  RULE(.class = "Spotify", .tags = 1 << 6)
-  RULE(.class = "Godot", .tags = 1 << 4)
-  RULE(.class = "Jellyfin Media Player", .tags = 1 << 6)
-  RULE(.class = "qBittorrent", .tags = 1 << 4)
-  RULE(.class = "Thorium-browser", .tags = 1 << 2)
-  RULE(.class = "Exodus", .tags = 1 << 4)
-  RULE(.class = "Nitrogen", .isfloating = 1)
+    RULE(.class = "Virt-manager", .tags = 1 << 5, .isfloating = 1)
+    RULE(.class = "vlc", .tags = 1 << 6)
+    RULE(.title = "AudioRelay", .tags = 1 << 4)
+    RULE(.class = "TelegramDesktop", .tags = 1 << 7, .isfloating = 1)
+    RULE(.class = "steam", .tags = 1 << 8)
+    RULE(.class = "Spotify", .tags = 1 << 6)
+    RULE(.class = "Godot", .tags = 1 << 4)
+    RULE(.class = "Jellyfin Media Player", .tags = 1 << 6)
+    RULE(.class = "qBittorrent", .tags = 1 << 4)
+    RULE(.class = "Thorium-browser", .tags = 1 << 2)
+    RULE(.class = "Exodus", .tags = 1 << 4)
+    RULE(.class = "Nitrogen", .isfloating = 1)
 };
 
 /* Bar rules allow you to configure what is shown where on the bar, as well as
