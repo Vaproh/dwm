@@ -8,7 +8,7 @@ static const unsigned int gappih         = 5;  /* horiz inner gap between window
 static const unsigned int gappiv         = 5;  /* vert inner gap between windows */
 static const unsigned int gappoh         = 5;  /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov         = 5;  /* vert outer gap between windows and screen edge */
-static const int smartgaps_fact          = 1;   /* gap factor when there is only one client; 0 = no gaps, 3 = 3x outer gaps */
+static const int smartgaps_fact          = 0;   /* gap factor when there is only one client; 0 = no gaps, 3 = 3x outer gaps */
 static const char autostartblocksh[]     = "autostart_blocking.sh";
 static const char autostartsh[]          = "autostart.sh";
 static const char dwmdir[]               = "dwm";
@@ -126,7 +126,7 @@ static Sp scratchpads[] = {
  */
 static char *tagicons[][NUMTAGS] =
 {
-	[DEFAULT_TAGS]        = { "󰣇", "", "", "", "󰚌", "", "󰕧", "󰻞", "󰺷" },
+	[DEFAULT_TAGS]        = { "一", "二", "三", "四", "五", "六", "七", "八", "九" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F", "G", "H", "I" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>", "<7>", "<8>", "<9>" },
 };
