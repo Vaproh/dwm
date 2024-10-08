@@ -1,1 +1,8 @@
-../../../../.dotfiles/.local/src/dwm/patch/bar_tagicons.h
+enum {
+	DEFAULT_TAGS,
+	ALTERNATIVE_TAGS,
+	ALT_TAGS_DECORATION,
+};
+
+static char * tagicon(Monitor *m, int tag);
+

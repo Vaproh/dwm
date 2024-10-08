@@ -1,1 +1,2 @@
-../../../../.dotfiles/.local/src/dwm/patch/dragmfact.h
+static void dragmfact(const Arg *arg);
+

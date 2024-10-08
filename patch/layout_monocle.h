@@ -1,1 +1,2 @@
-../../../../.dotfiles/.local/src/dwm/patch/layout_monocle.h
+static void monocle(Monitor *m);
+

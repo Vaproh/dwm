@@ -1,1 +1,2 @@
-../../../../.dotfiles/.local/src/dwm/patch/movestack.h
+static void movestack(const Arg *arg);
+

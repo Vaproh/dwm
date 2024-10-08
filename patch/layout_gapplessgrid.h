@@ -1,1 +1,2 @@
-../../../../.dotfiles/.local/src/dwm/patch/layout_gapplessgrid.h
+static void gaplessgrid(Monitor *m);
+

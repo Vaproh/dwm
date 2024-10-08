@@ -1,1 +1,3 @@
-../../../../.dotfiles/.local/src/dwm/patch/restartsig.h
+static void sighup(int unused);
+static void sigterm(int unused);
+

@@ -1,1 +1,2 @@
-../../../../.dotfiles/.local/src/dwm/patch/cfacts.h
+static void setcfact(const Arg *arg);
+
