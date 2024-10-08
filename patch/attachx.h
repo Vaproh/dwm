@@ -1,2 +1,1 @@
-static void attachx(Client *c);
-
+../../../../.dotfiles/.local/src/dwm/patch/attachx.h

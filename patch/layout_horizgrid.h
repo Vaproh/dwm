@@ -1,2 +1,1 @@
-static void horizgrid(Monitor *m);
-
+../../../../.dotfiles/.local/src/dwm/patch/layout_horizgrid.h

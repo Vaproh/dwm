@@ -1,4 +1,1 @@
-static void dwindle(Monitor *m);
-static void fibonacci(Monitor *m, int s);
-static void spiral(Monitor *m);
-
+../../../../.dotfiles/.local/src/dwm/patch/layout_fibonacci.h

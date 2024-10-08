@@ -1,2 +1,1 @@
-static void runautostart(void);
-
+../../../../.dotfiles/.local/src/dwm/patch/autostart.h

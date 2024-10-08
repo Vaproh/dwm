@@ -1,2 +1,1 @@
-static void pertagview(const Arg *arg);
-
+../../../../.dotfiles/.local/src/dwm/patch/pertag.h

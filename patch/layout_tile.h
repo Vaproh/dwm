@@ -1,2 +1,1 @@
-static void tile(Monitor *m);
-
+../../../../.dotfiles/.local/src/dwm/patch/layout_tile.h

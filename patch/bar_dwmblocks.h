@@ -1,3 +1,1 @@
-static int getstatusbarpid();
-static void sigstatusbar(const Arg *arg);
-
+../../../../.dotfiles/.local/src/dwm/patch/bar_dwmblocks.h

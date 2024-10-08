@@ -1,2 +1,1 @@
-static void barhover(XEvent *e, Bar *bar);
-static Bar *wintobar(Window win);
+../../../../.dotfiles/.local/src/dwm/patch/bar.h
