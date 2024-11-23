@@ -14,6 +14,7 @@
 #include "bar_systray.h"
 
 /* Other patches */
+#include "alttab.h"
 #include "attachx.h"
 #include "autostart.h"
 #include "cfacts.h"
